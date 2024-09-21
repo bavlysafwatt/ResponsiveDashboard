@@ -14,7 +14,7 @@ class ResponsiveDashboard extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xff4EB7F2)),
         useMaterial3: true,
       ),
       home: const HomePage(),
