@@ -18,8 +18,11 @@ class DesktopLayout extends StatelessWidget {
           flex: 3,
           child: Column(
             children: [
+              SizedBox(height: 20),
               Expanded(child: AllExpenses()),
+              SizedBox(height: 20),
               Expanded(child: AllExpenses()),
+              SizedBox(height: 20),
             ],
           ),
         ),
