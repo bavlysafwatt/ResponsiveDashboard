@@ -11,12 +11,12 @@ class DesktopLayout extends StatelessWidget {
     return const Row(
       children: [
         Expanded(
-          flex: 1,
+          flex: 280,
           child: CustomDrawer(),
         ),
         SizedBox(width: 32),
         Expanded(
-          flex: 3,
+          flex: 604,
           child: Column(
             children: [
               SizedBox(height: 20),
@@ -28,7 +28,7 @@ class DesktopLayout extends StatelessWidget {
           ),
         ),
         Expanded(
-          flex: 2,
+          flex: 468,
           child: SizedBox(),
         ),
       ],

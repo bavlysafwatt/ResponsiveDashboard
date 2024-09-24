@@ -21,13 +21,12 @@ class ActiveExpensesItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 10),
           AllExpensesItemHeader(
             image: allExpensesItemModel.image,
             imageBackground: Colors.white.withOpacity(0.10000000149011612),
             imageColor: Colors.white,
           ),
-          const SizedBox(height: 34),
+          const SizedBox(height: 50),
           Text(
             allExpensesItemModel.title,
             style: AppStyles.styleSemiBold16.copyWith(color: Colors.white),

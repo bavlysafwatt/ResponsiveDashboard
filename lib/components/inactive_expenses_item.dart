@@ -21,9 +21,8 @@ class InactiveExpensesItem extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SizedBox(height: 10),
           AllExpensesItemHeader(image: allExpensesItemModel.image),
-          const SizedBox(height: 34),
+          const SizedBox(height: 50),
           Text(
             allExpensesItemModel.title,
             style: AppStyles.styleSemiBold16,

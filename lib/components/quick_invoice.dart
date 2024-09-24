@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/components/custom_text_field.dart';
 import 'package:responsive_dashboard/components/latest_transaction_section.dart';
 import 'package:responsive_dashboard/components/quich_invoice_header.dart';
 
@@ -19,6 +20,16 @@ class QuickInvoice extends StatelessWidget {
           QuichInvoiceHeader(),
           SizedBox(height: 20),
           LatestTransactionSection(),
+          Divider(
+            height: 48,
+          ),
+          Row(
+            children: [
+              Expanded(child: CustomTextField(hintText: 'Type customer name')),
+              SizedBox(width: 50),
+              Expanded(child: CustomTextField(hintText: 'Type customer name')),
+            ],
+          ),
         ],
       ),
     );
