@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/components/custom_card_page_view.dart';
 import 'package:responsive_dashboard/components/dots_indicator.dart';
+import 'package:responsive_dashboard/components/transaction_history.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 
 class MyCardSection extends StatefulWidget {
@@ -45,6 +46,8 @@ class _MyCardSectionState extends State<MyCardSection> {
           CustomCardPageView(pageController: pageController),
           const SizedBox(height: 10),
           DotsIndicator(currentPageIndex: currentPageIndex),
+          const SizedBox(height: 40),
+          const TransactionHistory(),
         ],
       ),
     );
