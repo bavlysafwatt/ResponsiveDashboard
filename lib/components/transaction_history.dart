@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/components/transaction_history_list_view.dart';
 import 'package:responsive_dashboard/utils/app_styles.dart';
 
 class TransactionHistory extends StatelessWidget {
@@ -33,6 +34,8 @@ class TransactionHistory extends StatelessWidget {
             color: const Color(0xffAAAAAA),
           ),
         ),
+        const SizedBox(height: 16),
+        const TransactionHistoryListView(),
       ],
     );
   }

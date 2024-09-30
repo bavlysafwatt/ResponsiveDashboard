@@ -46,7 +46,10 @@ class _MyCardSectionState extends State<MyCardSection> {
           CustomCardPageView(pageController: pageController),
           const SizedBox(height: 10),
           DotsIndicator(currentPageIndex: currentPageIndex),
-          const SizedBox(height: 40),
+          const Divider(
+            height: 40,
+            color: Color(0xfff1f1f1),
+          ),
           const TransactionHistory(),
         ],
       ),
