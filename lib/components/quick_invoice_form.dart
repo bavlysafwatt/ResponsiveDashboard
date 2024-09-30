@@ -26,7 +26,7 @@ class QuickInvoiceForm extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(height: 30),
+        SizedBox(height: 25),
         Row(
           children: [
             Expanded(

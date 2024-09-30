@@ -36,8 +36,9 @@ class DesktopLayout extends StatelessWidget {
             children: [
               SizedBox(height: 15),
               MyCardSection(),
-              SizedBox(height: 24),
-              IncomeSection(),
+              SizedBox(height: 15),
+              Expanded(child: IncomeSection()),
+              SizedBox(height: 15),
             ],
           ),
         ),

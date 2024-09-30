@@ -11,7 +11,7 @@ class CustomCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(right: 8.0),
       child: AspectRatio(
-        aspectRatio: 420 / 215,
+        aspectRatio: 350 / 170,
         child: Container(
           padding:
               const EdgeInsets.only(left: 31, right: 42, top: 30, bottom: 30),
