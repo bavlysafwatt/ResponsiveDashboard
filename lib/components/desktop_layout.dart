@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/components/all_expenses.dart';
 import 'package:responsive_dashboard/components/custom_drawer.dart';
+import 'package:responsive_dashboard/components/income_section.dart';
 import 'package:responsive_dashboard/components/my_card_section.dart';
 import 'package:responsive_dashboard/components/quick_invoice.dart';
 
@@ -35,6 +36,8 @@ class DesktopLayout extends StatelessWidget {
             children: [
               SizedBox(height: 15),
               MyCardSection(),
+              SizedBox(height: 24),
+              IncomeSection(),
             ],
           ),
         ),
