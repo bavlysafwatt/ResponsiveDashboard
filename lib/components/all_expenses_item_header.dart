@@ -12,7 +12,6 @@ class AllExpensesItemHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Container(
           width: 60,
@@ -31,6 +30,7 @@ class AllExpensesItemHeader extends StatelessWidget {
             ),
           ),
         ),
+        const Spacer(),
         Icon(
           Icons.arrow_forward_ios_rounded,
           color:
