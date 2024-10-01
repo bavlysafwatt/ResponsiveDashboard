@@ -19,9 +19,10 @@ class CustomDrawer extends StatelessWidget {
           SliverToBoxAdapter(
             child: UserInfoListTile(
               userInfoModel: UserInfoModel(
-                  image: Assets.imagesAvatar3,
-                  title: 'Bavly Safwat',
-                  subTitle: 'demo@gmail.com'),
+                image: Assets.imagesAvatar3,
+                title: 'Bavly Safwat',
+                subTitle: 'demo@gmail.com',
+              ),
             ),
           ),
           SliverToBoxAdapter(child: SizedBox(height: 8)),
