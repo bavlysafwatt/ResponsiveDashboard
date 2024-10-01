@@ -17,13 +17,21 @@ class IncomeDetails extends StatelessWidget {
               color: Color(0xff208CC8),
             ),
           ),
-          title: Text(
-            'Design service',
-            style: AppStyles.styleRegular16(context),
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Design service',
+              style: AppStyles.styleRegular16(context),
+            ),
           ),
-          trailing: Text(
-            '40%',
-            style: AppStyles.styleMedium16(context),
+          trailing: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              '40%',
+              style: AppStyles.styleMedium16(context),
+            ),
           ),
         ),
         ListTile(
@@ -35,13 +43,21 @@ class IncomeDetails extends StatelessWidget {
               color: Color(0xff4EB7F2),
             ),
           ),
-          title: Text(
-            'Design product',
-            style: AppStyles.styleRegular16(context),
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Design product',
+              style: AppStyles.styleRegular16(context),
+            ),
           ),
-          trailing: Text(
-            '25%',
-            style: AppStyles.styleMedium16(context),
+          trailing: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              '25%',
+              style: AppStyles.styleMedium16(context),
+            ),
           ),
         ),
         ListTile(
@@ -53,13 +69,21 @@ class IncomeDetails extends StatelessWidget {
               color: Color(0xff064061),
             ),
           ),
-          title: Text(
-            'Product royalti',
-            style: AppStyles.styleRegular16(context),
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Product royalti',
+              style: AppStyles.styleRegular16(context),
+            ),
           ),
-          trailing: Text(
-            '20%',
-            style: AppStyles.styleMedium16(context),
+          trailing: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              '20%',
+              style: AppStyles.styleMedium16(context),
+            ),
           ),
         ),
         ListTile(
@@ -71,13 +95,21 @@ class IncomeDetails extends StatelessWidget {
               color: Color(0xffE2DECD),
             ),
           ),
-          title: Text(
-            'Other',
-            style: AppStyles.styleRegular16(context),
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Other',
+              style: AppStyles.styleRegular16(context),
+            ),
           ),
-          trailing: Text(
-            '22%',
-            style: AppStyles.styleMedium16(context),
+          trailing: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: Alignment.centerLeft,
+            child: Text(
+              '22%',
+              style: AppStyles.styleMedium16(context),
+            ),
           ),
         ),
       ],

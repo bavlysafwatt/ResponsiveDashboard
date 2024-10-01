@@ -21,9 +21,13 @@ class CustomButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
       ),
       child: Center(
-        child: Text(
-          text,
-          style: AppStyles.styleSemiBold16(context).copyWith(color: textColor),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: Text(
+            text,
+            style:
+                AppStyles.styleSemiBold16(context).copyWith(color: textColor),
+          ),
         ),
       ),
     );

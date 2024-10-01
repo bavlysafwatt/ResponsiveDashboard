@@ -9,13 +9,14 @@ class CustomCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
-      aspectRatio: 420 / 200,
+      aspectRatio: 420 / 190,
       child: Container(
         padding: const EdgeInsets.only(left: 31, right: 42),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
           color: const Color(0xff4EB7F2),
           image: const DecorationImage(
+            fit: BoxFit.fill,
             image: AssetImage(Assets.imagesCardBackground),
           ),
         ),
@@ -23,7 +24,7 @@ class CustomCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Flexible(child: SizedBox(height: 30)),
+            const Flexible(child: SizedBox(height: 10)),
             ListTile(
               contentPadding: EdgeInsets.zero,
               title: Text(
@@ -40,6 +41,7 @@ class CustomCard extends StatelessWidget {
             const Expanded(child: SizedBox()),
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
                   '0918 8124 0042 8129',
