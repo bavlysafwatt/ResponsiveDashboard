@@ -14,8 +14,8 @@ class CustomTextField extends StatelessWidget {
         filled: true,
         contentPadding: const EdgeInsets.all(12),
         hintText: hintText,
-        hintStyle:
-            AppStyles.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
+        hintStyle: AppStyles.styleRegular16(context)
+            .copyWith(color: const Color(0xffAAAAAA)),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
           borderSide: const BorderSide(color: Color(0xffFAFAFA)),
@@ -29,7 +29,8 @@ class CustomTextField extends StatelessWidget {
           borderSide: const BorderSide(color: Color(0xffFAFAFA)),
         ),
       ),
-      style: AppStyles.styleRegular16.copyWith(color: const Color(0xffAAAAAA)),
+      style: AppStyles.styleRegular16(context)
+          .copyWith(color: const Color(0xffAAAAAA)),
     );
   }
 }

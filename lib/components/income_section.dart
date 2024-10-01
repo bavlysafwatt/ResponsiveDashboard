@@ -14,20 +14,20 @@ class IncomeSection extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         color: Colors.white,
       ),
-      child: const Column(
+      child: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text(
                 'Income',
-                style: AppStyles.styleSemiBold20,
+                style: AppStyles.styleSemiBold20(context),
               ),
-              DropDownItem(),
+              const DropDownItem(),
             ],
           ),
-          SizedBox(height: 10),
-          IncomeSectionBody(),
+          const SizedBox(height: 10),
+          const IncomeSectionBody(),
         ],
       ),
     );

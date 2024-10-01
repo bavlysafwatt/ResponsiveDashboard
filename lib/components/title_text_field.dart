@@ -18,7 +18,7 @@ class TitleTextField extends StatelessWidget {
           padding: const EdgeInsets.only(left: 3.0),
           child: Text(
             title,
-            style: AppStyles.styleMedium16,
+            style: AppStyles.styleMedium16(context),
           ),
         ),
         const SizedBox(height: 12),
