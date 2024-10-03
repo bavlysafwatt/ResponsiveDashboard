@@ -24,19 +24,31 @@ class CustomCard extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Flexible(child: SizedBox(height: 10)),
-            ListTile(
-              contentPadding: EdgeInsets.zero,
-              title: Text(
-                'Name card',
-                style: AppStyles.styleRegular16(context)
-                    .copyWith(color: Colors.white),
-              ),
-              subtitle: Text(
-                'Syah Bandi',
-                style: AppStyles.styleMedium20(context),
-              ),
-              trailing: SvgPicture.asset(Assets.imagesGallery),
+            const Flexible(child: SizedBox(height: 20)),
+            Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Name card',
+                          style: AppStyles.styleRegular16(context)
+                              .copyWith(color: Colors.white),
+                        ),
+                        Text(
+                          'Syah Bandi',
+                          style: AppStyles.styleMedium20(context),
+                        ),
+                      ],
+                    ),
+                    SvgPicture.asset(Assets.imagesGallery),
+                  ],
+                ),
+              ],
             ),
             const Expanded(child: SizedBox()),
             Column(
@@ -55,7 +67,7 @@ class CustomCard extends StatelessWidget {
                 ),
               ],
             ),
-            const Flexible(child: SizedBox(height: 30)),
+            const Flexible(child: SizedBox(height: 20)),
           ],
         ),
       ),
